@@ -21,10 +21,10 @@ navLinks.forEach(link => {
 
 // Typing Animation
 const typingTexts = [
-    'Full Stack Developer',
-    'Problem Solver',
-    'Tech Enthusiast',
-    'Code Artist'
+    'ML Engineer & Researcher',
+    'Computer Vision Expert',
+    'IIT Gandhinagar Graduate',
+    'Deep Learning Enthusiast'
 ];
 
 let currentTextIndex = 0;
