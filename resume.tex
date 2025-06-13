@@ -1,0 +1,355 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage[margin=0in ]{geometry}
+\usepackage{latexsym}
+\usepackage{float}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{fontawesome5}
+\usepackage{enumitem}
+\usepackage{tabu}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\definecolor{lightblue}{RGB}{50,72,240} 
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.3in}
+% \addtolength{\bottommargin}{-0.3in}
+
+\urlstyle{same}
+
+%\raggedbottom
+% \raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-9pt}\scshape\raggedright\large\textbf
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\begin{document}
+
+
+\begin{tabular}[h!]{l@{\hskip 4.1cm}r}
+\hspace{-0.52cm}\textbf{\LARGE Utkarsh Mishra} & \href{mailto:utkarsh.mishra@alumni.iitgn.ac.in}{\faEnvelope\ utkarsh.mishra@alumni.iitgn.ac.in} \\
+\hspace{-0.52cm}{Electrical Engineering with Minor in Computer Science} & +91 6394255646 \\
+\hspace{-0.52cm}{Graduate of IIT Gandhinagar} & \\
+\end{tabular}
+
+
+
+\vspace{-1pt}
+%-----------EDUCATION-----------------
+\vspace{6pt}
+\hline
+\vspace{1pt}
+\centering
+\begin{tabu} to 1\textwidth { X[l] X[c] X[c] X[c]}
+{ \textbf{Degree} & \textbf{Institute/Board} & \textbf{CPI/\%} & \textbf{Year}} \\
+\hline
+B.Tech & IIT Gandhinagar & 8.79* & 2020 -- 2024 \\
+
+ % \hline
+Senior Secondary & ISC Board & 94\% & 2019 \\
+% \hline
+Secondary & CBSE Board & 10 CGPA & 2017 \\
+\hline
+\end{tabu}
+*secured a position on the Dean's List for 4 semesters. \hspace{9.5cm}
+\vspace{-7pt}
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Management Associate @ HDFC Bank Ltd}{(Jul 2024 -- Present)}{}{}
+       \vspace{-12pt}
+       \begin{itemize}
+        \item Working as part of CMDB (Configuration Management Database) team to complete on-boarding and Discovery of organization IT-Infrastructure for automatic population of configuration data in ServiceNow CMDB. Identifying and addressing Discovery errors to ensure reliability and integrity of the CMDB.\\
+        \vspace{-2pt}
+        \item Developed TypeScript based Office Scripts for data analysis. Working on development of Bash and PowerShell based automation scripts to streamline and automate testing and troubleshooting of Discovery errors.\\ 
+        \vspace{-2pt}
+        \item Developed scalable IP ranges population tool for CIDR IP ranges in Excel resulting in significant time savings.
+        \vspace{-2pt}
+        \item Automated server connection testing through PowerShell scripts resulting in reduction in time spent.
+     \end{itemize}
+
+     \vspace{-6pt}
+
+  \resumeSubheading
+      {Management Associate Intern @ HDFC Bank Ltd}{(May 2023 -- Jul 2023)}{}{}
+       \vspace{-12pt}
+       \begin{itemize}
+        \item Worked as part of CMDB team to facilitate transition from CA ServiceDesk R17 to ServiceNow. Worked on setting up, identifying errors, and troubleshooting devices and servers for Discovery.
+        \vspace{-2pt}
+        \item Identified and resolved connection, authentication and other issues for 1000+ devices. Analyzed large datasets to identify and report data gaps, ensuring CMDB reliability.\\
+        \vspace{-2pt}
+        \item Developed python based emailing script for enhanced reporting through HTML based database reports. 
+        \vspace{-2pt}
+        \item Received pre-placement offer from the company based on excellent performance. 
+
+
+     \end{itemize}
+
+     \vspace{-6pt}
+     
+\resumeItemListEnd
+%------------- Projects -------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Diffusion Transformer For 3D Point Cloud Denoising (Accepted at ICIP '25)}{(Aug 2024 - Present)}{Mentor: Prof. Shanmuganathan Raman}
+      {\textcolor{lightblue}{\href{https://github.com/Utkarsh-Mishra444/3D-Point-Cloud-Denoise}{(Repository)}}}{}
+      %\vspace{-12pt}
+       \begin{itemize}
+        \item Developed a transformer-based model for point cloud denoising building upon P2P-Bridge method by using multi-resolution hash encoding to efficiently capture multi-scale features and overcome memory constraints of dense grid encodings providing an alternate to PointNet based networks. 
+        \\
+        \vspace{-2pt}
+        \item Achieved SOTA performance on PCNet and PUNet datasets at 1\%  noise levels. Experimenting with various architectural designs and refining input encoding techniques to enhance accuracy at higher noise levels.
+     \end{itemize}
+
+
+\vspace{-6pt}
+
+    \resumeSubheading
+      {Denoising Gaussian Splatting For 3D Scene Reconstruction}{(Aug 2024 - Present)}{Mentor: Prof. Ravi Hegde}
+      {\textcolor{lightblue}{\href{https://github.com/Utkarsh-Mishra444/Denoising-Gaussian-Splatting}{(Repository)}}}{}
+      %\vspace{-12pt}
+       \begin{itemize}
+        \item Extended 3D Gaussian Splatting by applying denoising techniques (DBSCAN, point-wise distance pairing) to the input COLMAP sparse point cloud to reduce visual artifacts when using low resolution wide angle images.
+        \vspace{-2pt}
+        \item Developed a novel regularization method to mitigate overfitting by penalizing Gaussians that deviated significantly from the pruned COLMAP point cloud for reducing visual artifacts in interpolated views.
+        \vspace{-2pt}
+
+     \end{itemize}
+
+\vspace{-6pt}
+
+    \resumeSubheading
+      {Japanese Language Learning App}{(May 2024 - Jun 2024)}{Personal Project}
+      {\textcolor{lightblue}{\href{https://github.com/Utkarsh-Mishra444/Immerse}{(Repository)}}}{}
+      %\vspace{-12pt}
+       \begin{itemize}
+        \item Developed a native Android application in Kotlin using Jetpack Compose to enhance Japanese language learning by providing contextual word usage from YouTube videos, addressing the lack of contextual examples in traditional dictionaries and flashcards.
+        \vspace{-2pt}
+        \item Integrated the open-source JMDICT dictionary for comprehensive word lookup and utilized the YouTube Transcript API with Python integration via Chaquopy for transcript processing. \\
+        \vspace{-2pt}
+        \item Implemented natural language processing using Kuromoji to handle Japanese word conjugations by converting words into base forms, improving search accuracy and usability. 
+     \end{itemize}
+
+
+\vspace{-6pt}
+
+    \resumeSubheading
+      {GAN Inversion for Latent Space Analysis}{(Jan 2024 - May 2024)}{ES 413 Deep Learning, IIT Gandhinagar}
+      {\textcolor{lightblue}{\href{https://github.com/Utkarsh-Mishra444/Gan-Inversion}{(Repository)}}}{}
+      %\vspace{-12pt}
+       \begin{itemize}
+        \item Used GAN inversion on StyleGAN to invert images of cars into their latent representation and analyzed effect of object rotation on latent representation and generated novel views. 
+        \vspace{-2pt}
+        \item Identified and analyzed issues such as imperfect reconstruction, editability vs reconstruction error trade-off, the influence of the GAN's training data on outputs, background effects, and visual artifacts from latent space manipulation.
+
+     \end{itemize}
+
+
+\vspace{-6pt}
+
+    \resumeSubheading
+      {Human Pose Classification using Spatial-Temporal Graph Neural Network}{(Jan 2024 - May 2024)}{Mentor: Prof. Ravi Hegde, IIT Gandhinagar}
+      {\textcolor{lightblue}{\href{https://drive.google.com/file/d/1eB51xk6ZKn7HR4SFfv9kwp1dmNQnQqGG/view?usp=sharing}{(Poster)}}\textcolor{lightblue}{\href{https://github.com/Utkarsh-Mishra444/Human-Pose-GNN}{(Repository)}}}{}
+      %\vspace{-12pt}
+       \begin{itemize}
+        \item Utilized OpenPose, AlphaPose, and Yolo V7 for keypoint detection and human pose graph creation.
+        \vspace{-2pt}
+        \item Implemented an architecture combining Graph Convolutional Network (GCN) for feature extraction and Long Short-Term Memory Network (LSTM) to model spatial relationships and temporal dynamics for pose classification. Trained on the MPOSE2021 dataset.
+
+     \end{itemize}
+
+\vspace{-6pt}
+
+    \resumeSubheading
+      {Assorted PID Controller-Based Mechanisms}{(Jan 2024 - Mar 2024)}{Personal Project}
+      {}{}
+      %\vspace{-12pt}
+       \begin{itemize}
+        \item Utilized an Arduino to develop three systems: a ball balancing on a beam, an inverted pendulum, and a reaction wheel, all based on PID control.
+        \vspace{-2pt}
+
+     \end{itemize}
+
+
+\vspace{-6pt}
+
+    \resumeSubheading
+      {Synthetic Data Generation for Machine Learning}{(Aug 2023 - May 2024)}{Mentor: Prof. Shanmuganathan Raman, IIT Gandhinagar}
+      {\textcolor{lightblue}{\href{https://drive.google.com/file/d/1EdvRO9tcQluWlHwwh-OfD8RuvAoGLDWt/view?usp=sharing}{(Poster)}}\textcolor{lightblue}{\href{https://github.com/Utkarsh-Mishra444/Syn-Gen}{(Repository)}}}{}
+      %\vspace{-12pt}
+       \begin{itemize}
+        \item Generated high-quality synthetic images using StyleGAN-XL and Stable Diffusion tailored to the CIFAR-10 dataset, producing over 90,000 images to augment training data.
+        \vspace{-2pt}
+        \item Engineered advanced prompts by extracting visual attributes from the Visual Genome dataset, aligning class labels with WordNet synsets, clustering visual attributes with GloVe embeddings, and sampling from clusters to increase diversity of attributes. Further prompt enhancements using Gemma 2B-it.
+        \vspace{-2pt}
+        \item Conducted comparative analysis of classifiers (e.g. ResNet-34) trained on varying ratios of synthetic to real data through extensive experimentation on different types of synthetic data. Analyzed effects on classifier accuracy and confusion matrix. 
+
+     \end{itemize}
+
+
+\vspace{-6pt}
+
+    \resumeSubheading
+      {Wearable Device for Real Time Sign Language Recognition}{(Apr 2023)}{ES 333 Microprocessors and Embedded Systems, IIT Gandhinagar}
+      {\textcolor{lightblue}{\href{https://github.com/Utkarsh-Mishra444/Sign-Recog-Glove}{(Repository)}}}{}
+      %\vspace{-12pt}
+       \begin{itemize}
+        \item Worked in a team of 4 to develop a wearable device for sign language recognition using a STM32 Nucleo microcontroller and flex sensors for data acquisition. 
+        \vspace{-2pt}
+        \item Implemented USB CDC protocol to communicate sensor data to host device running Scikit-learn based MLP classifier used to detect gestures.
+        \vspace{-2pt}
+
+     \end{itemize}
+
+
+\vspace{-6pt}
+
+    \resumeSubheading
+      {Experimental Analysis of Stokes-Einstein \& Stokes-Einstein-Debye Equations}{(Aug 2022 - Nov 2022)}{BS 191 Matter and Energy Laboratory, IIT Gandhinagar}
+      {\textcolor{lightblue}{\href{https://drive.google.com/file/d/1bTYEfIJr_yOuy1eHvitEQpjc5D6bzoEW/view?usp=sharing}{(Report)}}}{}
+      %\vspace{-12pt}
+       \begin{itemize}
+        \item Led a team of five members to undertake the verification of the Stokes-Einstein and Stokes-Einstein-Debye Equations. Performed project planning, apparatus procurement, and project execution.
+        \vspace{-2pt}
+        \item Managed team effort , including a critical 48-hour reaction phase, organizing team members' schedules for continuous supervision, leading to successful synthesis and analysis of polystyrene colloidal particles.
+        \vspace{-2pt}
+        \item Designed a custom stretching device using Autodesk Inventor critical for processing of particles. Developed code for motion tracking of particle images obtained through microscopy.
+     \end{itemize}
+
+\vspace{-6pt}
+
+    \resumeSubheading
+      {Computer Simulation of a Double Pendulum System}{(Mar 2022 - Apr 2022)}{MA 202 Mathematics IV, IIT Gandhinagar}
+      {\textcolor{lightblue}{\href{https://drive.google.com/file/d/1-EFRKVZxgTvrAgzBkCjlADpQfkhaO6c0/view?usp=sharing}{(Report)}}}{}
+      %\vspace{-12pt}
+       \begin{itemize}
+        \item Developed an animated simulation of a double pendulum to demonstrate chaotic systems in python in collaboration with a team of 5. Used Lagrangian Mechanics for analysis of the system, employing the fourth order Runge-Kutta method to find numerical solution to the differential equations.
+     \end{itemize}
+
+
+\vspace{-6pt}
+
+    \resumeSubheading
+      {Prototype Spirometer}{(Oct 2021 - Nov 2021)}{ES 106 Manufacturing and Workshop Practice, IIT Gandhinagar}
+      {{\textcolor{lightblue}{\href{https://drive.google.com/file/d/16chjG9bR7VuPl2_ATGgaKBMT-h8MeDyy/view?usp=sharing}{(Presentation)}}
+      }}{}
+      %\vspace{-12pt}
+       \begin{itemize}
+        \item Worked in a team of 2 members to design a spirometer prototype for measuring lung capacity as a precautionary measure to detect COVID-19 symptoms.
+        \vspace{-2pt}
+        \item Engineered a CAD model in Autodesk Inventor and constructed a functional prototype using 3D printing and laser cutting. Integrated a NodeMCU microcontroller and a speed sensor to accurately measure RPM of the custom-designed impeller to assess lung capacity.
+
+     \end{itemize}
+
+\vspace{-6pt}
+
+    \resumeSubheading
+      {3D Prototype of a Port Crane}{(Jan 2021-Apr 2021)}{ES 101 Engineering Graphics, IIT Gandhinagar}
+      {}{}
+      %\vspace{-12pt}
+       \begin{itemize}
+        \item Worked in a team of 10 to design a CAD model of a port crane. Ideated the design through sketches and brought the concept to life using 3D modeling in Autodesk Inventor.
+        \vspace{-2pt}
+        \item Managed the group effort by distributing tasks. Held sessions to ensure timely completion by every team member. Assembled the components made by the team into the final model for submission. Filmed, presented and edited the final presentation to be submitted on behalf of the team
+
+     \end{itemize}
+
+\vspace{-6pt}
+
+\resumeItemListEnd
+
+
+\vspace{1pt}
+% \section{Teaching Experience \hfill \small(Certificate)}
+\section{Teaching Experience}
+
+\resumeSubHeadingListStart
+\resumeSubheading{Academic Discussion Hour Mentor, Engineering Graphic} {(Feb 2022 - Apr 2022)}
+{}{}
+\vspace{-12pt}
+\begin{itemize}
+\item Selected as one of the four student mentors to help teach the course ES101 Engineering Graphics in tandem with regular classes. Selected based on past academic excellence in the course.
+
+\vspace{-3pt}
+\item Held weekly sessions to clear student queries, deliver personalized mentoring to improve learning outcomes.
+\end{itemize}
+
+
+\resumeSubHeadingListEnd
+
+
+
+\section{Relevant Courses}
+\vspace{-2pt}
+ % \begin{multicols}{2}
+ \begin{itemize}[leftmargin = *,itemsep=-3pt]
+
+    Deep Learning, Computation and Cognition, Probability and Random Processes, Signals Systems and Networks, Data Structures and Algorithms, Linear Algebra and Single Variable Calculus, Multivariable Calculus and Complex Analysis, Ordinary Differential Equations, Probability Statistics and Numerical Methods, Digital Signal Processing, Control Theory, Digital Systems, Microprocessors and Embedded Systems, Computer Organization and Architecture, Operating Systems, Databases
+    
+
+\end{itemize}
+
+%\vspace{-15pt}
+
+\section{Technical Skills Summary}
+ \resumeSubHeadingListStart
+ \resumeSubItem{Programming Languages}
+ {	Java , Python, C, C++, Kotlin, Verilog, Matlab.}
+ \resumeSubItem{Platforms \& Frameworks}{PyTorch, Scikit-learn, Google Cloud, GitHub, Linux}
+  \resumeSubItem{Architectures \& Technologies}{Diffusion Models, VAEs, GANs , LSTM, Transformers, Neural Radiance Fields (NeRFs) , 3D Gaussian Splatting, Graph Neural Networks, Microcontrollers (Arduino, STM32 Nucleo, NodeMCU) }
+ 
+ \resumeSubHeadingListEnd
+
+
+\end{document}

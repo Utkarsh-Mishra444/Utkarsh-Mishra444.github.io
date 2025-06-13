@@ -1,480 +1,426 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utkarsh Mishra - ML Engineer & Researcher</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Utkarsh</span>
-                <span class="logo-dot">.</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+  <head>
+    <meta charset="utf-8">
+    <title>Utkarsh Mishra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      /* typography */
+      body, td, th {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: #1772d0;
+        text-decoration: none;
+      }
+      a:hover, a:focus {
+        color: #f09228;
+      }
+
+      /* container */
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+
+      /* name + links */
+      .page-heading {
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem;
+        font-size: 2em;
+      }
+      .link‐row {
+        text-align: center;
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+        white-space: nowrap;
+      }
+      .link‐row a {
+        margin: 0 0.5em;
+      }
+
+      /* intro section as two columns */
+      .intro {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+      .intro .bio {
+        flex: 0 0 73%;
+        max-width: 73%;
+        box-sizing: border-box;
+        padding-right: 1rem;
+      }
+      .intro .photo {
+        flex: 0 0 27%;
+        max-width: 27%;
+        box-sizing: border-box;
+        text-align: right;
+      }
+      .intro .photo img {
+        max-width: 95%;
+        height: auto;
+        border-radius: 4px;
+      }
+
+      /* table reset */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 2rem;
+      }
+      td {
+        vertical-align: top;
+        padding: 1em;
+      }
+      
+      /* Experience table specific styles */
+      .experience-table td {
+        text-align: center;
+      }
+      .experience-table td img {
+        max-width: 100px;
+        height: auto;
+        display: block;
+        margin: 0 auto 0.5em;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .intro {
+          flex-direction: column;
+        }
+        .intro .bio,
+        .intro .photo {
+          flex: 1;
+          max-width: 100%;
+          padding-right: 0;
+          text-align: center;
+        }
+        .intro .photo {
+          margin-top: 1rem;
+        }
+        .link‐row {
+          white-space: normal;
+        }
+        .experience-table {
+          display: block;
+          overflow-x: auto;
+          white-space: nowrap;
+        }
+        body, td, th {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Name -->
+      <h2 class="page-heading">Utkarsh Mishra</h2>
+
+      <!-- Links under name -->
+      <div class="link‐row">
+        <a href="mailto:utkarsh.mishra@alumni.iitgn.ac.in">E‑mail</a> |
+        <a href="https://github.com/Utkarsh-Mishra444" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/utkarsh-mishra-444/" target="_blank">LinkedIn</a> |
+        <a href="tel:+916394255646">+91 6394255646</a>
+      </div>
+
+      <!-- Intro section -->
+      <div class="intro">
+        <div class="bio">
+          <p>
+            Hi, I am Utkarsh Mishra, an Electrical Engineering graduate from 
+            <a href="https://iitgn.ac.in/" target="_blank">Indian Institute of Technology, Gandhinagar</a> 
+            with a minor in Computer Science. I currently work as a Management Associate at 
+            <a href="https://www.hdfcbank.com/" target="_blank">HDFC Bank</a>, specializing in 
+            CMDB management and IT infrastructure automation.
+          </p>
+          <p>
+            My research interests lie in computer vision, 3D graphics, deep learning, and diffusion models. 
+            I have published work in point cloud denoising using transformer-based architectures and continue 
+            to explore novel applications of machine learning in 3D reconstruction and generative modeling.
+          </p>
+          <p>
+            I graduated with a CPI of 8.79 from IIT Gandhinagar and was on the Dean's List for 4 semesters. 
+            My work spans both academic research and industry applications of AI/ML technologies.
+          </p>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="gradient-text">Hi, I'm Utkarsh</span>
-                        <br>
-                        <span class="typing-text"></span>
-                    </h1>
-                    <p class="hero-description">
-                        Electrical Engineering graduate from IIT Gandhinagar with expertise in machine learning, 
-                        computer vision, and deep learning research. Currently working on enterprise IT infrastructure at HDFC Bank.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-container">
-                        <img src="Sun.jpg" alt="Utkarsh Mishra" class="profile-image">
-                        <div class="image-glow"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-scroll">
-                <div class="scroll-indicator">
-                    <span>Scroll Down</span>
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-            </div>
+        <div class="photo">
+          <img src="Sun.jpg" alt="Utkarsh Mishra">
         </div>
-        <div class="hero-bg-animation">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-            </div>
+      </div>
+
+      <!-- Experience -->
+      <h2>Professional Experience</h2>
+      <table class="experience-table">
+        <tr>
+          <td>
+            <div style="width: 80px; height: 60px; background: linear-gradient(45deg, #ED1C24, #FFBB00); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin: 0 auto 0.5em; border-radius: 8px;">HDFC</div>
+            <div>HDFC Bank<br>2024 - Present</div>
+          </td>
+          <td>
+            <div style="width: 80px; height: 60px; background: linear-gradient(45deg, #ED1C24, #FFBB00); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin: 0 auto 0.5em; border-radius: 8px;">HDFC</div>
+            <div>HDFC Bank (Intern)<br>Summer 2023</div>
+          </td>
+          <td>
+            <div style="width: 80px; height: 60px; background: linear-gradient(45deg, #4285F4, #34A853, #FBBC05, #EA4335); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin: 0 auto 0.5em; border-radius: 8px;">IIT</div>
+            <div>Research @ IIT GN<br>2020 - 2024</div>
+          </td>
+        </tr>
+      </table>
+
+      <!-- News -->
+      <h2>News & Achievements</h2>
+      <ul>
+        <li><strong>2025:</strong> Paper accepted at ICIP 2025 on 3D Point Cloud Denoising using Diffusion Transformers.</li>
+        <li><strong>2024:</strong> Graduated from IIT Gandhinagar with CPI 8.79, Dean's List for 4 semesters.</li>
+        <li><strong>2024:</strong> Joined HDFC Bank as Management Associate working on ServiceNow CMDB and IT automation.</li>
+        <li><strong>2023:</strong> Summer internship at HDFC Bank, received pre-placement offer for excellent performance.</li>
+        <li><strong>2022-2024:</strong> Multiple research projects in computer vision, 3D graphics, and deep learning.</li>
+      </ul>
+
+      <!-- Publications -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+        <td style="padding:20px;width:100%;vertical-align:middle">
+          <h2>Publications</h2>
+        </td>
+      </tr>
+    </tbody></table>
+      
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      
+       <tr>
+        <td style="padding:2.5%;width:40%;vertical-align:top;min-width:120px">
+          <div style="width:100%; height:120px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
+            <i style="font-family: Arial;">🧊</i>
+          </div>
+        </td>
+        <td style="padding:2.5%;width:60%;vertical-align:top">
+          <h3>Diffusion Transformer For 3D Point Cloud Denoising</h3>
+          <br>
+          <strong>Utkarsh Mishra,</strong> Shanmuganathan Raman
+          <br>
+          <div style="height: 0.5em;"></div>
+          <em> <strong>ICIP 2025</strong> (Accepted)</em>
+          <br>
+          <a href="https://github.com/Utkarsh-Mishra444/3D-Point-Cloud-Denoise">Code</a>
+          <br>
+          <p style="margin-top: 0.5em; font-size: 0.9em; color: #666;">
+            Developed a transformer-based model using multi-resolution hash encoding for point cloud denoising. 
+            Achieved SOTA performance on PCNet and PUNet datasets at 1% noise levels.
+          </p>
+        </td>
+      </tr>
+      
+    </table>
+
+    <!-- Research Projects -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+      <td style="padding:20px;width:100%;vertical-align:middle">
+        <h2>Research Projects</h2>
+      </td>
+    </tr>
+  </tbody></table>
+
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    
+    <tr>
+      <td style="padding:2.5%;width:40%;vertical-align:top;min-width:120px">
+        <div style="width:100%; height:120px; background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
+          <i style="font-family: Arial;">👁️</i>
         </div>
-    </section>
+      </td>
+      <td style="padding:2.5%;width:60%;vertical-align:top">
+        <h3>Denoising Gaussian Splatting For 3D Scene Reconstruction</h3>
+        <br>
+        <strong>Utkarsh Mishra,</strong> Ravi Hegde
+        <br>
+        <div style="height: 0.5em;"></div>
+        <em>Aug 2024 - Present</em>
+        <br>
+        <a href="https://github.com/Utkarsh-Mishra444/Denoising-Gaussian-Splatting">Code</a>
+        <br>
+        <p style="margin-top: 0.5em; font-size: 0.9em; color: #666;">
+          Extended 3D Gaussian Splatting with denoising techniques (DBSCAN, point-wise distance pairing) 
+          to reduce visual artifacts when using low resolution wide angle images.
+        </p>
+      </td>
+    </tr>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3 class="about-subtitle">Engineering Intelligence</h3>
-                    <p>
-                        I'm an Electrical Engineering graduate from IIT Gandhinagar with a minor in Computer Science. 
-                        Currently working as a Management Associate at HDFC Bank, focusing on enterprise IT infrastructure, 
-                        CMDB management, and automation solutions using ServiceNow and various scripting technologies.
-                    </p>
-                    <p>
-                        My research interests span computer vision, deep learning, and 3D graphics, with published work 
-                        in point cloud denoising. I enjoy tackling complex problems at the intersection of hardware and software.
-                    </p>
-                    <div class="stats">
-                        <div class="stat">
-                            <h4>8.79</h4>
-                            <p>CPI @ IIT Gandhinagar</p>
-                        </div>
-                        <div class="stat">
-                            <h4>1</h4>
-                            <p>Published Paper</p>
-                        </div>
-                        <div class="stat">
-                            <h4>15+</h4>
-                            <p>Research Projects</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="code-block">
-                        <div class="code-header">
-                            <div class="code-dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <span class="code-title">about-me.js</span>
-                        </div>
-                        <div class="code-content">
-                            <pre><code class="language-python">about_me = {
-    "name": "Utkarsh Mishra",
-    "role": "ML Engineer & Researcher",
-    "education": "B.Tech EE, IIT Gandhinagar",
-    "languages": ["Python", "Java", "C++", "Kotlin"],
-    "specialties": ["Computer Vision", "Deep Learning", "3D Graphics"],
-    "current_work": "HDFC Bank - CMDB & ServiceNow",
-    "research_interests": ["Diffusion Models", "Point Clouds", "GANs"],
-    "published_papers": "ICIP 2025"
-}</code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <tr>
+      <td style="padding:2.5%;width:40%;vertical-align:top;min-width:120px">
+        <div style="width:100%; height:120px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #333; font-size: 24px;">
+          <i style="font-family: Arial;">🇯🇵</i>
         </div>
-    </section>
+      </td>
+      <td style="padding:2.5%;width:60%;vertical-align:top">
+        <h3>Japanese Language Learning App</h3>
+        <br>
+        <strong>Utkarsh Mishra</strong>
+        <br>
+        <div style="height: 0.5em;"></div>
+        <em>May 2024 - Jun 2024</em>
+        <br>
+        <a href="https://github.com/Utkarsh-Mishra444/Immerse">Code</a>
+        <br>
+        <p style="margin-top: 0.5em; font-size: 0.9em; color: #666;">
+          Native Android app in Kotlin using Jetpack Compose. Provides contextual word usage from YouTube videos, 
+          integrated with JMDICT dictionary and NLP using Kuromoji.
+        </p>
+      </td>
+    </tr>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">C++</span>
-                        <span class="skill-item">C</span>
-                        <span class="skill-item">Kotlin</span>
-                        <span class="skill-item">Verilog</span>
-                        <span class="skill-item">MATLAB</span>
-                        <span class="skill-item">TypeScript</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>ML & Platforms</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">PyTorch</span>
-                        <span class="skill-item">Scikit-learn</span>
-                        <span class="skill-item">Google Cloud</span>
-                        <span class="skill-item">GitHub</span>
-                        <span class="skill-item">Linux</span>
-                        <span class="skill-item">ServiceNow</span>
-                        <span class="skill-item">PowerShell</span>
-                        <span class="skill-item">Bash</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Research Areas</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Diffusion Models</span>
-                        <span class="skill-item">GANs</span>
-                        <span class="skill-item">VAEs</span>
-                        <span class="skill-item">Transformers</span>
-                        <span class="skill-item">Neural Radiance Fields</span>
-                        <span class="skill-item">3D Gaussian Splatting</span>
-                        <span class="skill-item">Graph Neural Networks</span>
-                        <span class="skill-item">Computer Vision</span>
-                    </div>
-                </div>
-            </div>
+    <tr>
+      <td style="padding:2.5%;width:40%;vertical-align:top;min-width:120px">
+        <div style="width:100%; height:120px; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #333; font-size: 24px;">
+          <i style="font-family: Arial;">🧠</i>
         </div>
-    </section>
+      </td>
+      <td style="padding:2.5%;width:60%;vertical-align:top">
+        <h3>GAN Inversion for Latent Space Analysis</h3>
+        <br>
+        <strong>Utkarsh Mishra</strong>
+        <br>
+        <div style="height: 0.5em;"></div>
+        <em>Jan 2024 - May 2024</em>
+        <br>
+        <a href="https://github.com/Utkarsh-Mishra444/Gan-Inversion">Code</a>
+        <br>
+        <p style="margin-top: 0.5em; font-size: 0.9em; color: #666;">
+          Used GAN inversion on StyleGAN to analyze effect of object rotation on latent representation 
+          and generate novel views through latent space manipulation.
+        </p>
+      </td>
+    </tr>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Here are some of my recent works</p>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-cube"></i>
-                            <span>Point Cloud Denoising</span>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Utkarsh-Mishra444/3D-Point-Cloud-Denoise" class="project-link" title="View Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="project-link" title="Paper (ICIP '25)">
-                                    <i class="fas fa-file-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">3D Point Cloud Denoising (ICIP '25)</h3>
-                        <p class="project-description">
-                            Developed a transformer-based model using multi-resolution hash encoding for point cloud denoising. 
-                            Achieved SOTA performance on PCNet and PUNet datasets at 1% noise levels.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">Transformers</span>
-                            <span class="tech-tag">3D Graphics</span>
-                            <span class="tech-tag">Computer Vision</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-eye"></i>
-                            <span>Gaussian Splatting</span>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Utkarsh-Mishra444/Denoising-Gaussian-Splatting" class="project-link" title="View Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Denoising Gaussian Splatting</h3>
-                        <p class="project-description">
-                            Extended 3D Gaussian Splatting with denoising techniques (DBSCAN, point-wise distance pairing) 
-                            to reduce visual artifacts when using low resolution wide angle images.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">3D Reconstruction</span>
-                            <span class="tech-tag">COLMAP</span>
-                            <span class="tech-tag">Computer Vision</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-language"></i>
-                            <span>Language Learning</span>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Utkarsh-Mishra444/Immerse" class="project-link" title="View Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Japanese Language Learning App</h3>
-                        <p class="project-description">
-                            Native Android app in Kotlin using Jetpack Compose. Provides contextual word usage from YouTube videos, 
-                            integrated with JMDICT dictionary and natural language processing using Kuromoji.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Kotlin</span>
-                            <span class="tech-tag">Android</span>
-                            <span class="tech-tag">Jetpack Compose</span>
-                            <span class="tech-tag">NLP</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-brain"></i>
-                            <span>GAN Inversion</span>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Utkarsh-Mishra444/Gan-Inversion" class="project-link" title="View Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">GAN Inversion for Latent Space Analysis</h3>
-                        <p class="project-description">
-                            Used GAN inversion on StyleGAN to invert car images into latent representation. 
-                            Analyzed effect of object rotation and generated novel views from latent space manipulation.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">StyleGAN</span>
-                            <span class="tech-tag">GANs</span>
-                            <span class="tech-tag">Deep Learning</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-walking"></i>
-                            <span>Pose Classification</span>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Utkarsh-Mishra444/Human-Pose-GNN" class="project-link" title="View Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://drive.google.com/file/d/1eB51xk6ZKn7HR4SFfv9kwp1dmNQnQqGG/view?usp=sharing" class="project-link" title="View Poster">
-                                    <i class="fas fa-image"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Human Pose Classification using GNNs</h3>
-                        <p class="project-description">
-                            Combined Graph Convolutional Networks with LSTM to model spatial relationships and temporal dynamics 
-                            for pose classification. Used OpenPose and AlphaPose for keypoint detection.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">GNNs</span>
-                            <span class="tech-tag">LSTM</span>
-                            <span class="tech-tag">OpenPose</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-hand-paper"></i>
-                            <span>Sign Language</span>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Utkarsh-Mishra444/Sign-Recog-Glove" class="project-link" title="View Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Wearable Sign Language Recognition</h3>
-                        <p class="project-description">
-                            Developed wearable device using STM32 Nucleo microcontroller and flex sensors. 
-                            Implemented USB CDC protocol with Scikit-learn MLP classifier for real-time gesture detection.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">STM32</span>
-                            <span class="tech-tag">C</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                            <span class="tech-tag">Embedded Systems</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects-cta">
-                <a href="#" class="btn btn-primary">View All Projects</a>
-            </div>
+    <tr>
+      <td style="padding:2.5%;width:40%;vertical-align:top;min-width:120px">
+        <div style="width:100%; height:120px; background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
+          <i style="font-family: Arial;">🤸</i>
         </div>
-    </section>
+      </td>
+      <td style="padding:2.5%;width:60%;vertical-align:top">
+        <h3>Human Pose Classification using Spatial-Temporal GNNs</h3>
+        <br>
+        <strong>Utkarsh Mishra,</strong> Ravi Hegde
+        <br>
+        <div style="height: 0.5em;"></div>
+        <em>Jan 2024 - May 2024</em>
+        <br>
+        <a href="https://github.com/Utkarsh-Mishra444/Human-Pose-GNN">Code</a> |
+        <a href="https://drive.google.com/file/d/1eB51xk6ZKn7HR4SFfv9kwp1dmNQnQqGG/view?usp=sharing">Poster</a>
+        <br>
+        <p style="margin-top: 0.5em; font-size: 0.9em; color: #666;">
+          Combined Graph Convolutional Networks with LSTM to model spatial relationships and temporal dynamics 
+          for pose classification using OpenPose and AlphaPose.
+        </p>
+      </td>
+    </tr>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Work Together</h2>
-            <p class="section-subtitle">Ready to bring your ideas to life? Let's connect!</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>utkarsh.mishra@alumni.iitgn.ac.in</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Phone</h3>
-                            <p>+91 6394255646</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Education</h3>
-                            <p>IIT Gandhinagar</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        <label for="subject">Subject</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        <label for="message">Message</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
+    <tr>
+      <td style="padding:2.5%;width:40%;vertical-align:top;min-width:120px">
+        <div style="width:100%; height:120px; background: linear-gradient(135deg, #fad0c4 0%, #ffd1ff 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #333; font-size: 24px;">
+          <i style="font-family: Arial;">🤟</i>
         </div>
-    </section>
+      </td>
+      <td style="padding:2.5%;width:60%;vertical-align:top">
+        <h3>Wearable Device for Real Time Sign Language Recognition</h3>
+        <br>
+        <strong>Utkarsh Mishra,</strong> Team of 4
+        <br>
+        <div style="height: 0.5em;"></div>
+        <em>Apr 2023</em>
+        <br>
+        <a href="https://github.com/Utkarsh-Mishra444/Sign-Recog-Glove">Code</a>
+        <br>
+        <p style="margin-top: 0.5em; font-size: 0.9em; color: #666;">
+          Developed wearable device using STM32 Nucleo microcontroller and flex sensors. 
+          Implemented USB CDC protocol with Scikit-learn MLP classifier for gesture detection.
+        </p>
+      </td>
+    </tr>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <div class="footer-logo">
-                        <span class="logo-text">Utkarsh</span>
-                        <span class="logo-dot">.</span>
-                    </div>
-                    <p>Crafting digital experiences with passion and precision.</p>
-                </div>
-                <div class="footer-right">
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link" title="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-link" title="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link" title="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Utkarsh Mishra. All rights reserved.</p>
-            </div>
+    <tr>
+      <td style="padding:2.5%;width:40%;vertical-align:top;min-width:120px">
+        <div style="width:100%; height:120px; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
+          <i style="font-family: Arial;">🎨</i>
         </div>
-    </footer>
+      </td>
+      <td style="padding:2.5%;width:60%;vertical-align:top">
+        <h3>Synthetic Data Generation for Machine Learning</h3>
+        <br>
+        <strong>Utkarsh Mishra,</strong> Shanmuganathan Raman
+        <br>
+        <div style="height: 0.5em;"></div>
+        <em>Aug 2023 - May 2024</em>
+        <br>
+        <a href="https://github.com/Utkarsh-Mishra444/Syn-Gen">Code</a> |
+        <a href="https://drive.google.com/file/d/1EdvRO9tcQluWlHwwh-OfD8RuvAoGLDWt/view?usp=sharing">Poster</a>
+        <br>
+        <p style="margin-top: 0.5em; font-size: 0.9em; color: #666;">
+          Generated high-quality synthetic images using StyleGAN-XL and Stable Diffusion for CIFAR-10 dataset. 
+          Analyzed effects on classifier accuracy with varying synthetic to real data ratios.
+        </p>
+      </td>
+    </tr>
+    
+  </table>
 
-    <script src="script.js"></script>
+  <!-- Education -->
+  <h2>Education</h2>
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr>
+      <td style="padding:2.5%;width:40%;vertical-align:top;min-width:120px">
+        <div style="width:100%; height:120px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 18px;">
+          IIT<br>Gandhinagar
+        </div>
+      </td>
+      <td style="padding:2.5%;width:60%;vertical-align:top">
+        <h3>B.Tech in Electrical Engineering (Minor in Computer Science)</h3>
+        <br>
+        <strong>Indian Institute of Technology, Gandhinagar</strong>
+        <br>
+        <div style="height: 0.5em;"></div>
+        <em>2020 - 2024 | CPI: 8.79</em>
+        <br>
+        <p style="margin-top: 0.5em; font-size: 0.9em; color: #666;">
+          Dean's List for 4 semesters. Relevant coursework: Deep Learning, Computer Vision, 
+          Data Structures & Algorithms, Digital Signal Processing, Control Theory, Operating Systems.
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Technical Skills -->
+  <h2>Technical Skills</h2>
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr>
+      <td style="padding:20px;width:100%;vertical-align:middle">
+        <p><strong>Programming Languages:</strong> Python, Java, C++, C, Kotlin, MATLAB, Verilog</p>
+        <p><strong>ML/AI Frameworks:</strong> PyTorch, Scikit-learn, OpenCV, TensorFlow</p>
+        <p><strong>Platforms & Tools:</strong> Google Cloud, GitHub, Linux, ServiceNow, PowerShell, Bash</p>
+        <p><strong>Research Areas:</strong> Computer Vision, 3D Graphics, Diffusion Models, GANs, Transformers, Graph Neural Networks</p>
+        <p><strong>Hardware:</strong> Arduino, STM32 Nucleo, Microcontrollers, Embedded Systems</p>
+      </td>
+    </tr>
+  </table>
+
+
+        
 </body>
+
 </html> 
